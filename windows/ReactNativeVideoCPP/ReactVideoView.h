@@ -48,6 +48,7 @@ struct ReactVideoView : ReactVideoViewT<ReactVideoView> {
   void OnBufferingStarted(IInspectable const &sender, IInspectable const &);
   void OnBufferingEnded(IInspectable const &sender, IInspectable const &);
   void OnSeekCompleted(IInspectable const &sender, IInspectable const &);
+  void OnPlaybackStateChanged(IInspectable const& sender, IInspectable const&);
 
   void runOnQueue(std::function<void()> &&func);
 };
